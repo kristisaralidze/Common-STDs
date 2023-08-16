@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="website.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <title>Risk Evaluation</title>
+</head>
+<body>
+    <script src="website.js"></script>
+    <header>
+        <div class="row">
+          <div class="col">
+            <h1>Common STDs</h1>
+          </div>
+          <div class="col">
+              <nav class="navbar navbar-expand-lg">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Content
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="hiv.html" style="color: black;">AIDS</a>
+                            <a class="dropdown-item" href="hepC.html" style="color: black;">Hepatitis C</a>
+                            <a class="dropdown-item" href="hepB.html" style="color: black;">Hepatitis B</a>
+                            <a class="dropdown-item" href="syph.html" style="color: black;">Syphilis</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="riskEv.html">Risk evaluation/Contact</a>
+                        </li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+        </div>
+      </header>   
+
+
+      <div class="page-six">
+        <article class="container">
+            <div>
+                <h2>Let’s evaluate your risks of having STDs:</h2>
+            </div>
+                    <form action="mailto:kristisaralidze@gmail.com" method="post">
+                            <div class="last-container-1">
+                                <h4>Please select your gender:</h4>
+                                <input type="radio" id="male" name="gender" value="Male" class="form-check-input">
+                                <label for="male" class="form-check-label">MALE</label><br>
+                                <input type="radio" id="female" name="gender" value="Female" class="form-check-input">
+                                <label for="female" class="form-check-label">FEMALE</label><br>
+                            
+                                <h4>Please select your age:</h4>
+                                <input type="radio" id="age1" name="Age" value="0-30" class="form-check-input">
+                                <label for="age1" class="form-check-label">0-30</label><br>
+                                <input type="radio" id="age2" name="Age" value="31-60" class="form-check-input">
+                                <label for="age2" class="form-check-label">31-60</label><br>
+                                <input type="radio" id="age3" name="Age" value="61-100" class="form-check-input">
+                                <label for="age3" class="form-check-label">61-100</label><br>
+                            
+                            <h4>Choose your symptoms:</h4>
+                            <div class="form-check">
+                                <input type="checkbox" id="symptom1" name="symptom1" value="Rapid weight loss" class="form-check-input">
+                                <label for="symptom1" class="form-check-label">Rapid weight loss</label><br>
+                                <input type="checkbox" id="symptom2" name="symptom2" value="Recurring fever" class="form-check-input">
+                                <label for="symptom2" class="form-check-label">Recurring fever</label><br>
+                                <input type="checkbox" id="symptom3" name="symptom3" value="Unusual discharge" class="form-check-input">
+                                <label for="symptom3" class="form-check-label">Unusual discharge</label><br>
+                                <input type="checkbox" id="symptom4" name="symptom4" value="Abdominal pain" class="form-check-input">
+                                <label for="symptom4" class="form-check-label">Abdominal pain</label><br>
+                                <input type="checkbox" id="symptom5" name="symptom5" value="Dark urine" class="form-check-input">
+                                <label for="symptom5" class="form-check-label">Dark urine</label><br>
+                            </div>
+                            </div>
+                            <div class="last-container-2">
+
+                                <h3>Have you ever had unprotected sexual intercourse or a blood transfusion? If yes, when?</h3>
+                                <input type="text" id="answer1" name="answer1" class="form-control form-control-lg" placeholder="Enter your answer" required maxlength="100"><br>
+                            
+                                <h3>Enter additional symptoms:</h3>
+                                <input type="text" id="answer2" name="answer2" class="form-control form-control-lg" placeholder="Enter your answer" required maxlength="100"><br>
+                                <input type="reset" value="Reset">
+                        
+                                <input type="submit" value="Submit">
+                            </div>
+                    </form>
+        </article>
+            <footer id="footer">
+                <h4>Author:</h4>
+                <p class="contact">Kristine Saralidze <br> E-mail: kristisaralidze@gmail.com <br> LinkedIn: www.linkedin.com/in/kristine-saralidze</p>
+            </footer>
+    </div>
+</body>
+</html>
